@@ -16,7 +16,13 @@ In the test file, I define an elliptic curve and two points, then find various s
 
     rtl_point O(0,1,0);
 ```
-
+```
+    EC curve(A,B);
+    cout << "On the curve " << curve << endl;
+    cout << P1 << " + " << P2 << " = " << curve.add_points(P1,P2) << endl;
+    cout << P1 << " + " << P1 << " = " << curve.add_points(P1,P1) << endl;
+    cout << P1 << " + " << O << " = " << curve.add_points(P1,O) << endl;
+```
 Below is the output of the program.
 ```
 On the curve y^2 = x^3 + (-7)x + (15)
