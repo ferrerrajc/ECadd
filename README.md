@@ -1,5 +1,5 @@
 # Elliptic Curve Addition
-####
+##
 
 In the test file, I define an elliptic curve and two points, then find various sums.
 ```
@@ -40,8 +40,14 @@ P1 + P2
     (-14/9 : -127/27 : 1)
 ```
 
+# Required Library
+##
+
+This program uses the rational number header file from the Boost C++ library which can be found at http://www.boost.org/
+
 # Problems
-#
+##
+
 > - The rational numbers overflow easily. With the arithmetic used, the size of the integers in the 
 numerator and denominator grow quickly.
 > - It is almost certain that the arithmetic used in the addition is not the optimal way to write it.
