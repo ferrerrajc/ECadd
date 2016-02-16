@@ -1,6 +1,16 @@
 # Elliptic Curve Addition
 ##
+This file defines a class to represent elliptic curves with the 
+purpose of using the abelian group structure of an elliptic curve
+to find the sum of two points.
+Curves are given as being defined by a Weierstrass form
 
+        y^2 = x^3 + Ax + B
+
+for rational numbers A, B.
+This has been written as part of an assignment for MATH 788 Spring 2016
+at the University of South Carolina.
+##
 In the test file, I define an elliptic curve and two points, then find various sums.
 ```
     rational<int> A(-7);
